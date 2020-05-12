@@ -11,6 +11,10 @@ object EndpointBuilder {
         return context.getString(R.string.endpointHost)
     }
 
+    fun getBaseApiEndpoint(context: Context) : String{
+        return "https://${getEndpointUrl(context)}/api/${context.getString(R.string.apiVer)}"
+    }
+
     fun getVideoUrl(context : Context, channel : String) : String{
         return "http://${getEndpointUrl(context)}:1567/transmit?name=$channel-video"
     }

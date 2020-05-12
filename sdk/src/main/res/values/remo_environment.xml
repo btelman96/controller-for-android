@@ -15,4 +15,7 @@
     <string name="endpointHost">
         remo.tv
     </string>
+
+    <string name="apiVer">dev</string>
+
 </resources>
